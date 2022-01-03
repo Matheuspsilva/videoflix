@@ -13,6 +13,8 @@
 
                     <br>
                     <livewire:test></livewire:test>
+                    <hr class="my-5">
+                    @livewire('content.index')
                 </div>
             </div>
         </div>
