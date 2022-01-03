@@ -25,6 +25,8 @@ Route::prefix('/content')->name('content.')->group(function(){
 
     Route::get('/', \App\Http\Livewire\Content\Index::class)->name('index');
     Route::get('/create', \App\Http\Livewire\Content\Create::class)->name('create');
+    Route::get('/{content}/edit', \App\Http\Livewire\Content\Edit::class)->name('edit');
+
 
 
 });
