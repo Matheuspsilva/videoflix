@@ -9,7 +9,7 @@
 
     <div class="mb-5">
         <label for="">Título</label>
-        <input type="text" wire:model="title">
+        <input type="text" wire:model.defer="title">
         @error('title')
             {{$message}}
         @enderror
@@ -17,8 +17,8 @@
 
     <div class="mb-5">
         <label for="">Conteúdo</label>
-        <input type="text" wire:model="content">
-        @error('content')
+        <input type="text" wire:model.defer="body">
+        @error('body')
             {{$message}}
         @enderror
     </div>
