@@ -12,7 +12,7 @@
                     You're logged in!
 
                     <br>
-                    <livewire:test></livewire:test>
+                    @livewire('content.create')
                     <hr class="my-5">
                     @livewire('content.index')
                 </div>

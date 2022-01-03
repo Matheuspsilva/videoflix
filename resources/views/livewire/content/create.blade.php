@@ -1,4 +1,5 @@
 <div>
+    <x-slot name="header">Criar novo conteúdo</x-slot>
     @if (session()->has('success'))
         <div class="w-full p-5 border border-green-500 bg-green-400">
             {{ session('success') }}
